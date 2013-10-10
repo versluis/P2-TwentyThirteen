@@ -198,13 +198,13 @@ function p2_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-formats', p2_get_supported_post_formats( 'post-format' ) );
 
-	add_theme_support( 'custom-background', apply_filters( 'p2_custom_background_args', array( 'default-color' => 'f1f1f1' ) ) );
+	// add_theme_support( 'custom-background', apply_filters( 'p2_custom_background_args', array( 'default-color' => 'f1f1f1' ) ) );
 
 	add_filter( 'the_content', 'make_clickable', 12 ); // Run later to avoid shortcode conflicts
 
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'p2' ),
-	) );
+	// register_nav_menus( array(
+	// 	'primary' => __( 'Primary Menu', 'p2' ),
+	// ) );
 
 	if ( is_admin() && false === get_option( 'prologue_show_titles' ) )
 		add_option( 'prologue_show_titles', 1 );

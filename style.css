@@ -3119,3 +3119,128 @@ footer.entry-meta {
 		color: #333;
 	}
 }
+
+/* --------------------------------
+   P2 Post Box Styling
+   --------------------------------*/
+   
+/* post box styling starts here */
+#postbox {
+	background: #fff;
+	position: relative;
+	padding: 16px 15px 16px 14px;
+}
+#postbox div.avatar {
+	margin-top: 25px;
+	float: left;
+	border: 0;
+}
+#postbox div.avatar img {
+	padding: 0;
+	border: solid;
+	border-width: 1px;
+}
+#postbox .inputarea {
+	padding-left: 60px;
+}
+.inputarea .post-input {
+	display: none;
+}
+.inputarea .selected {
+	display: block;
+}
+#postbox textarea#posttext,
+textarea.posttext {
+	border: solid;
+	border-width: 1px;
+	font-size: 13px;
+	margin-bottom: 6px;
+	max-width: 97%;
+	padding: 5px 7px;
+	width: 97%;
+	height: 4em;
+}
+#wrapper form input[type="text"],
+.inlineediting input[type="text"] {
+	border: solid;
+	border-width: 1px;
+	padding: 5px 7px;
+}
+.inlineediting input[type="text"] {
+	width: 97.45%;
+}
+form#new_post {
+	margin-top: 20px;
+}
+#postbox label#post-prompt {
+	display: block;
+	float: left;
+	font-weight: normal;
+	font-size: 1.6em;
+	max-width: 490px;
+}
+#postbox input#tags {
+	width: 75%;
+	float: left;
+}
+.inlineediting input.tags {
+	width: 60%;
+}
+#postbox input#submit {
+	margin: 0 3px 0 6px;
+	padding: 0 20px;
+	float: right;
+}
+#postbox .postrow {
+	height: 28px;
+}
+#media-buttons {
+	float: right;
+	min-width: 100px;
+	position: relative;
+		top: 6px;
+		right: 16px;
+	text-align: right;
+}
+#postbox-type-post:not([style*="display: none"]) + #media-buttons {
+	top: 0;
+}
+#media-buttons .add_media:after {
+	background: url( i/icons.png ) -800px center no-repeat;
+	content: '';
+	float: right;
+	margin-left: 5px;
+	position: relative;
+		top: -1px;
+	width: 16px;
+	height: 16px;
+}
+#media-buttons .button {
+	background: transparent;
+	border: none;
+	height: auto;
+	padding: 0;
+	line-height: inherit;
+}
+
+#postbox input#posttitle,
+#postbox input#postcitation {
+	width: 97%;
+	margin-bottom: 5px;
+}
+.disabled, .disabled:hover {
+	border: solid;
+	border-width: 1px;
+}
+#respond #submit, input#comment-submit {
+	width: auto;
+}
+input#comment-submit {
+	clear: both;
+}
+#main ul#postlist {
+	list-style: none;
+	margin-top: 16px;
+	margin-left: 0;
+}
+/* post box styling ends here */

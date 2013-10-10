@@ -23,6 +23,12 @@
  * @subpackage Twenty_Thirteen
  * @since Twenty Thirteen 1.0
  */
+ 
+/** 
+ * before we begin, let's import the classi P2 functions
+ *
+ */
+ require get_template_directory () . '/p2-functions.php';
 
 /**
  * Sets up the content width value based on the theme's design.

@@ -11,13 +11,19 @@
  *
  * @package WordPress
  * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @since P2 Twenty Thirteen 1.0
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
+        
+        <!-- P2 Post Form -->
+        <?php if ( p2_user_can_post() && !is_archive() ) : ?>
+		<?php locate_template( array( 'p2-post-form.php' ), true ); ?>
+		<?php endif; ?>
+        
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* The loop */ ?>

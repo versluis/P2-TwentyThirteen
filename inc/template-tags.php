@@ -9,8 +9,8 @@
 function p2_body_class( $classes ) {
 	if ( is_tax( P2_MENTIONS_TAXONOMY ) )
 		$classes[] = 'mentions';
-	if ( p2_is_iphone() )
-		$classes[] = 'iphone';
+	// if ( p2_is_iphone() )
+	// 	$classes[] = 'iphone';
 	return $classes;
 }
 add_filter( 'body_class', 'p2_body_class' );

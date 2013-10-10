@@ -155,7 +155,7 @@ class P2_JS {
 			'whoops_maybe_offline'  => __( 'Whoops! Looks like you are not connected to the server. P2 could not connect with WordPress.', 'p2' ),
 			'required_filed'        => __( 'This field is required.', 'p2' ),
 		) );
-
+/*
 		if ( p2_is_iphone() ) {
 			wp_enqueue_script(
 				'iphone',
@@ -165,7 +165,7 @@ class P2_JS {
 				true
 			);
 		}
-
+*/
 		add_action( 'wp_head', array( 'P2_JS', 'locale_script_data' ), 2 );
 	}
 

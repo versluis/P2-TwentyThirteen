@@ -216,8 +216,8 @@ function p2_register_sidebar() {
 		'name' => __( 'Sidebar', 'p2' ),
 	) );
 }
-add_filter( 'widgets_init', 'p2_register_sidebar' );
-
+// add_filter( 'widgets_init', 'p2_register_sidebar' );
+/*
 function p2_background_color() {
 	$background_color = get_option( 'p2_background_color' );
 
@@ -247,6 +247,7 @@ function p2_background_image() {
 <?php
 }
 add_action( 'wp_head', 'p2_background_image' );
+*/
 
 /**
  * Add a custom class to the body tag for the background image theme option.
@@ -259,6 +260,7 @@ add_action( 'wp_head', 'p2_background_image' );
  *
  * @since P2 1.5
  */
+ /*
 function p2_body_class_background_image( $classes ) {
 	$image = get_option( 'p2_background_image' );
 
@@ -270,6 +272,7 @@ function p2_body_class_background_image( $classes ) {
 	return $classes;
 }
 add_action( 'body_class', 'p2_body_class_background_image' );
+*/
 
 // Content Filters
 function p2_title( $before = '<h2>', $after = '</h2>', $echo = true ) {
@@ -534,11 +537,13 @@ add_filter( 'template_redirect', 'p2_new_post_noajax' );
  * @uses p2_is_iphone()
  * @since P2 1.4
  */
+ /*
 function p2_viewport_meta_tag() {
 	if ( p2_is_iphone() )
 		echo '<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no"/>';
 }
 add_action( 'wp_head', 'p2_viewport_meta_tag', 1000 );
+*/
 
 /**
  * iPhone Stylesheet.
@@ -548,6 +553,7 @@ add_action( 'wp_head', 'p2_viewport_meta_tag', 1000 );
  * @uses p2_is_iphone()
  * @since P2 1.4
  */
+ /*
 function p2_iphone_style() {
 	if ( p2_is_iphone() ) {
 		wp_enqueue_style(
@@ -559,7 +565,7 @@ function p2_iphone_style() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'p2_iphone_style', 1000 );
-
+*/
 /**
  * Print Stylesheet.
  *
@@ -567,6 +573,7 @@ add_action( 'wp_enqueue_scripts', 'p2_iphone_style', 1000 );
  *
  * @since P2 1.5
  */
+ /*
 function p2_print_style() {
 	wp_enqueue_style( 'p2', get_stylesheet_uri() );
 	wp_enqueue_style( 'p2-print-style', get_template_directory_uri() . '/style-print.css', array( 'p2' ), '20120807', 'print' );
@@ -575,6 +582,7 @@ function p2_print_style() {
 		wp_enqueue_script( 'comment-reply' );
 }
 add_action( 'wp_enqueue_scripts', 'p2_print_style' );
+*/
 
 /*
 	Modified to replace query string with blog url in output string
@@ -696,6 +704,7 @@ function p2_get_supported_post_formats( $type = 'all' ) {
  * @return bool
  * @since P2 1.4
  */
+ /*
 function p2_is_iphone() {
 	$output = false;
 
@@ -706,6 +715,7 @@ function p2_is_iphone() {
 
 	return $output;
 }
+*/
 
 /**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.

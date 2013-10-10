@@ -198,7 +198,7 @@ function p2_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-formats', p2_get_supported_post_formats( 'post-format' ) );
 
-	// add_theme_support( 'custom-background', apply_filters( 'p2_custom_background_args', array( 'default-color' => 'f1f1f1' ) ) );
+	add_theme_support( 'custom-background', apply_filters( 'p2_custom_background_args', array( 'default-color' => 'f1f1f1' ) ) );
 
 	add_filter( 'the_content', 'make_clickable', 12 ); // Run later to avoid shortcode conflicts
 
@@ -217,7 +217,7 @@ function p2_register_sidebar() {
 	) );
 }
 // add_filter( 'widgets_init', 'p2_register_sidebar' );
-/*
+
 function p2_background_color() {
 	$background_color = get_option( 'p2_background_color' );
 
@@ -247,7 +247,7 @@ function p2_background_image() {
 <?php
 }
 add_action( 'wp_head', 'p2_background_image' );
-*/
+
 
 /**
  * Add a custom class to the body tag for the background image theme option.
@@ -260,7 +260,7 @@ add_action( 'wp_head', 'p2_background_image' );
  *
  * @since P2 1.5
  */
- /*
+ 
 function p2_body_class_background_image( $classes ) {
 	$image = get_option( 'p2_background_image' );
 
@@ -272,7 +272,7 @@ function p2_body_class_background_image( $classes ) {
 	return $classes;
 }
 add_action( 'body_class', 'p2_body_class_background_image' );
-*/
+
 
 // Content Filters
 function p2_title( $before = '<h2>', $after = '</h2>', $echo = true ) {
